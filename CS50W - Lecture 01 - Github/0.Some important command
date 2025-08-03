@@ -1,17 +1,65 @@
-ls
+### 🧹 Git Reset, Undo & Clean
+git restore file_name                 # Undo changes in file (since last commit)
+git restore --staged file_name       # Unstage a file
 
-cd folder_name
-cd "folder name"
+git reset                            # Unstage everything (soft reset)
+git reset --hard                     # Delete all local changes (DANGER!)
 
-clone url
+git clean -fd                        # Remove untracked files and folders
 
-touch file_name
-touch "file name"
+---
 
-mkdir "folder name"
-mkdir folder_name
+### 🔍 Viewing & Comparing
+git diff                             # Show unstaged changes
+git diff --staged                    # Show staged changes
 
-Open an existing file : 
-open "file_name.etx"
+git show                             # Show last commit details
+git log --oneline                    # Compact commit history
 
-ex : open 
+git blame file_name                  # See who changed each line of a file
+
+---
+
+### 🤝 Git Collaboration
+git fetch                            # Get latest changes (won’t merge)
+git pull origin branch_name          # Get and merge changes
+
+git push origin branch_name          # Push current branch to GitHub
+
+git remote add origin <url>          # Connect local repo to remote GitHub repo
+git remote -v                        # Show current remotes
+
+----
+
+### 🧪 Working with Branches
+git branch                           # List local branches
+git branch -r                        # List remote branches
+
+git checkout -b new_branch           # Create and switch to a new branch
+
+git push -u origin new_branch        # Push new branch and track it
+
+git merge branch_name                # Merge a branch into current one
+
+git branch -d branch_name            # Delete a local branch
+git push origin --delete branch_name # Delete remote branch
+
+---
+
+### 📂 Terminal File Handling (continued)
+rm file_name                         # Delete a file
+rm -r folder_name                    # Delete a folder
+
+mv old_name new_name                 # Rename/move file or folder
+cp file1.txt folder/                 # Copy file to folder
+cat file.txt                         # Show file content
+nano file.txt                        # Open file in terminal editor
+
+---
+
+### 🚀 GitHub Authentication & Config
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+
+git config --list                    # Show config
+git config --global -e               # Edit global config

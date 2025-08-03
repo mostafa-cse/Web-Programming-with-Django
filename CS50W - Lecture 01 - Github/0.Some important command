@@ -1,0 +1,17 @@
+ls
+
+cd folder_name
+cd "folder name"
+
+clone url
+
+touch file_name
+touch "file name"
+
+mkdir "folder name"
+mkdir folder_name
+
+Open an existing file : 
+open "file_name.etx"
+
+ex : open 

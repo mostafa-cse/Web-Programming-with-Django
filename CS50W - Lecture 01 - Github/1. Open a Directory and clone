@@ -1,0 +1,15 @@
+Create A New Directory : 
+
+Open Github and then Create a 'New Directory' pressing on '+ New' button
+Then Give a 'Directory Name' and Description 
+
+
+Clone Directory:
+Copy Directory HTTPS link
+Open terminal and goto your target Directory(folder) using      
+    cd folder_name
+    cd "folder name"
+    here cd = change directory
+then clone this directory using 
+    clone copied_https_url
+and Press 'enter'

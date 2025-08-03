@@ -1,0 +1,20 @@
+Add New Fill at Github : 
+git add <file_name>
+
+ex : git add "index.html"
+
+
+Add commits at Github : 
+git commit -m "massage"
+
+ex : git massage -m "i put some code"
+
+Show status in repo : 
+git status
+
+ex : git status
+
+Push a New file into Github : 
+git push
+
+ex : git push
